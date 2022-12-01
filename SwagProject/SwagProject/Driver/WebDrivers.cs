@@ -20,6 +20,13 @@ namespace SwagProject.Driver
             Instance.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             Instance.Navigate().GoToUrl("https://www.saucedemo.com/");
         }
+        public static void UrlAssert()
+        {
+            
+        }
+        
+
+        
         public static void CleanUp()
         {
             Instance?.Quit();
